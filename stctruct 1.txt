@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct
+{
+	string ismi;
+	string model;
+	int yıl;
+}araba1, araba2, araba3;
+
+int main()
+{
+	setlocale(LC_ALL, "turkish");
+
+	araba1.ismi = "ford";
+	araba1.model = "mustang";
+	araba1.yıl = 2023;
+
+	araba2.ismi = "BMW";
+	araba2.model = "i8";
+	araba2.yıl = 2022;
+
+	araba3.ismi = "fiat";
+	araba3.model = "Albea";
+	araba3.yıl = 2009;
+
+
+	cout << araba1.ismi << endl << araba1.model << endl << araba1.yıl << endl << endl;
+	cout << araba2.ismi << endl << araba2.model << endl << araba2.yıl << endl << endl;
+	cout << araba3.ismi << endl << araba3.model << endl << araba3.yıl << endl << endl;
+
+
+	return 0;
+}
